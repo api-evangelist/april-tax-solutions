@@ -1,23 +1,57 @@
 aid: april-tax-solutions
+
 name: April Tax Solutions
+
 description: 'April Tax Solutions is a company surfaced via the API Evangelist harvest backlog (source:
   secondary-market) and added to the network as a stub for full-pipeline profiling.'
+
 url: https://raw.githubusercontent.com/api-evangelist/april-tax-solutions/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-25 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-25'
+
 modified: '2026-09-25'
+
 tags:
 - Company
-apis: []
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/april-tax-solutions-hosts.yml
+- type: Vendors
+  url: vendors/april-tax-solutions-vendors.yml
+- type: DomainSecurity
+  url: security/april-tax-solutions-domain-security.yml
 - type: Website
   url: https://www.nasdaqprivatemarket.com/
+
+apis: []
+
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: No developer documentation or API reference pages were found on the company's website.
+  evidence:
+    - url: https://www.nasdaqprivatemarket.com/developers
+      status: 404
+  checked: 2026-09-25
+x-enrichment:
+  date: '2026-09-25'
+  status: enriched
+  artifacts_added: 4
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local
